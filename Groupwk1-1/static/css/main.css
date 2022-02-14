@@ -1,0 +1,160 @@
+body{
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding:0;
+    font-family: sans-serif;
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left{
+    margin-right: 0;
+
+}
+
+.right{
+    background-image: url("../img/Sign\ Up\ -\ CRM\ SIgnup.jpg");
+    position: relative;
+    z-index: -10;
+    top: -90px;
+    left: -100px;
+    
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper {
+       flex-direction: row;
+       height: 100vh;
+      }
+
+    
+    .left{
+        display:flex;
+        width: 30%;
+        height: auto;
+    }
+    .right{
+        display:flex;
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+
+
+.sign-up-form{
+    grid-column: 1;
+    box-shadow:none;
+    background: white;
+    padding: 15px;
+    margin: px auto 0;
+    text-align: center;
+    position: left;
+    margin:0;
+}
+
+.sign-up-form h1{
+    color: black;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.input-username{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 25px 0;
+    width: 90%;
+    border: 1px solid rgb(121, 122, 126);
+    outline: none;
+
+    /* background-image: url(https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-1024.png);
+    background-position: 25px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    */
+}
+.input-box{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 25px 0;
+    width: 90%;
+    border: 1px solid rgb(121, 122, 126);
+    outline: none;
+
+    /* background-image: url(https://cdn4.iconfinder.com/data/icons/round-mobile-ui-set/512/letter-message-email-mail-20.png);
+    background-position: 25px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc; */
+}
+
+.input-password{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 25px 0;
+    width: 90%;
+    border: 1px solid rgb(121, 122, 126);
+    outline: none;
+
+
+    /* background-image: url(https://cdn4.iconfinder.com/data/icons/round-mobile-ui-set/512/letter-message-email-mail-20.png);
+    background-position: 25px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc; */
+}
+
+
+
+button{
+    color:rgb(255, 255, 255);
+    width: 50%;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.sign-btn{
+    background-color: blue;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.icons{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.input_holder {
+    position: relative;
+}
+
+.input_holder img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 44px;
+    padding-left: 15px;
+    height: 24px;
+    width: 24px;
+}
